@@ -36,7 +36,7 @@ export default function Home() {
     <>
       {isLoading && <LoadingScreen />}
       
-      <div className="min-h-screen bg-slate-900">
+      <div className="min-h-screen bg-slate-900 overflow-x-hidden">
         {/* Header */}
         <Header onMobileMenuToggle={handleMobileMenuToggle} />
         
@@ -47,7 +47,7 @@ export default function Home() {
         />
         
         {/* Main Content */}
-        <main>
+        <main className="overflow-x-hidden">
           <HeroSection />
           <AboutSection />
           <SkillsSection />

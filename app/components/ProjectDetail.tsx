@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 interface ProjectDetailProps {
   project: {
@@ -56,16 +55,18 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
   const renderImage = (imageSrc: string, alt: string) => {
     if (imageSrc.startsWith('/')) {
       return (
-        <Image 
-          src={imageSrc} 
-          alt={alt}
-          fill
-          className="object-cover"
-        />
+        <div className="relative w-full h-full flex items-center justify-center">
+          <img 
+            src={imageSrc} 
+            alt={alt}
+            className="max-w-full max-h-full object-contain rounded-xl"
+            style={{ borderRadius: '0.75rem' }}
+          />
+        </div>
       );
     } else {
       return (
-        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-600/20 to-pink-600/20">
+        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-xl">
           <div className="text-8xl">{imageSrc}</div>
         </div>
       );
@@ -74,17 +75,17 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
 
   return (
     <div 
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4 overflow-hidden"
       onClick={handleBackdropClick}
     >
-      <div className={`bg-slate-900 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto border border-purple-500/20 transition-all duration-500 ${
+      <div className={`bg-slate-900 rounded-2xl max-w-6xl w-full max-h-[95vh] sm:max-h-[90vh] overflow-y-auto border border-purple-500/20 transition-all duration-500 ${
         isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
       }`}>
         {/* Header */}
-        <div className="sticky top-0 bg-slate-900/95 backdrop-blur-sm border-b border-purple-500/20 p-6 flex items-center justify-between">
-          <div>
-            <h1 className="text-3xl font-bold text-white mb-2">{project.title}</h1>
-            <div className="flex items-center gap-4">
+        <div className="sticky top-0 bg-slate-900/95 backdrop-blur-sm border-b border-purple-500/20 p-4 sm:p-6 flex items-center justify-between">
+          <div className="min-w-0 flex-1 pr-4">
+            <h1 className="text-xl sm:text-3xl font-bold text-white mb-2 truncate">{project.title}</h1>
+            <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
               <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                 project.status === 'completed' 
                   ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
@@ -107,9 +108,9 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
           </button>
         </div>
 
-        <div className="p-6">
+        <div className="p-4 sm:p-6 overflow-x-hidden">
           {/* Image Carousel */}
-          <div className="relative h-full mb-8 rounded-xl overflow-hidden bg-slate-800">
+          <div className="relative w-full h-80 sm:h-96 lg:h-[500px] xl:h-[600px] mb-6 sm:mb-8 rounded-xl overflow-hidden">
             {renderImage(projectImages[currentImageIndex], project.title)}
             
             {projectImages.length > 1 && (
@@ -157,25 +158,25 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
             )}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-6">
               {/* Description */}
               <div>
-                <h2 className="text-xl font-semibold text-white mb-3">About This Project</h2>
-                <p className="text-gray-300 leading-relaxed">
+                <h2 className="text-lg sm:text-xl font-semibold text-white mb-3">About This Project</h2>
+                <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                   {project.fullDescription || project.description}
                 </p>
               </div>
 
               {/* Tech Stack */}
               <div>
-                <h2 className="text-xl font-semibold text-white mb-3">Technologies Used</h2>
-                <div className="flex flex-wrap gap-3">
+                <h2 className="text-lg sm:text-xl font-semibold text-white mb-3">Technologies Used</h2>
+                <div className="flex flex-wrap gap-2 sm:gap-3">
                   {project.tech.map((tech) => (
                     <span 
                       key={tech} 
-                      className="bg-slate-800 text-purple-300 px-4 py-2 rounded-lg border border-purple-500/30 font-medium"
+                      className="bg-slate-800 text-purple-300 px-3 sm:px-4 py-2 rounded-lg border border-purple-500/30 font-medium text-sm"
                     >
                       {tech}
                     </span>
@@ -185,12 +186,12 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
 
               {/* Key Features */}
               <div>
-                <h2 className="text-xl font-semibold text-white mb-3">Key Features</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <h2 className="text-lg sm:text-xl font-semibold text-white mb-3">Key Features</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {project.features.map((feature, index) => (
                     <div key={index} className="flex items-start gap-3 p-3 bg-slate-800/50 rounded-lg border border-purple-500/10">
-                      <span className="text-purple-400 text-sm mt-1">✓</span>
-                      <span className="text-gray-300">{feature}</span>
+                      <span className="text-purple-400 text-sm mt-1 flex-shrink-0">✓</span>
+                      <span className="text-gray-300 text-sm sm:text-base">{feature}</span>
                     </div>
                   ))}
                 </div>
