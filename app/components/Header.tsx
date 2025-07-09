@@ -59,15 +59,27 @@ export default function Header({ onMobileMenuToggle }: HeaderProps) {
             </div>
           </div>
 
-          {/* Resume Button */}
-          <div className="hidden md:block">
+          {/* Resume Button Desktop */}
+          <div className="hidden lg:block">
             <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full font-medium hover:scale-105 transition-transform duration-200"
             >
-              Resume
+              Download CV
+            </a>
+          </div>
+
+          {/* Resume Button Tablet */}
+          <div className="hidden md:block lg:hidden">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full font-medium hover:scale-105 transition-transform duration-200 text-sm"
+            >
+              CV
             </a>
           </div>
 

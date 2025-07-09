@@ -53,7 +53,7 @@ export default function HeroSection() {
             </div>
 
             {/* Description */}
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl lg:max-w-none leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto lg:max-w-none lg:mx-0 leading-relaxed">
               Passionate about building clean , modern, interactive, and responsive website. 
             </p>
 
@@ -78,7 +78,7 @@ export default function HeroSection() {
             </div>
 
             {/* Social Links */}
-            <div className="flex justify-center lg:justify-start space-x-8 mt-12">
+            <div className="flex justify-center lg:justify-start space-x-8 mt-12 mb-24 lg:mb-0">
               <a 
                 href="https://github.com/ReinDaze" 
                 target="_blank" 
