@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <h3 className="text-2xl font-bold text-white">
-                Gustavito's Portfolio<span className="text-purple-400">.</span>
+                Gustavito&apos;s Portfolio<span className="text-purple-400">.</span>
               </h3>
               <p className="text-gray-300 mt-2">
                 Front-End Developer

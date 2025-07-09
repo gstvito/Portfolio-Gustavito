@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,7 +38,7 @@ export default function HeroSection() {
           <div className="text-center lg:text-left order-2 lg:order-1">
             {/* Greeting */}
             <div className="mb-4">
-              <span className="text-purple-400 text-lg font-medium">Hello, I'm</span>
+              <span className="text-purple-400 text-lg font-medium">Hello, I&apos;m</span>
             </div>
 
             {/* Name */}
@@ -124,10 +125,12 @@ export default function HeroSection() {
                 
                 {/* Your Photo */}
                 <div className="relative w-full h-full bg-gradient-to-br from-slate-700 to-slate-800 rounded-full border-4 border-purple-500/30 overflow-hidden">
-                  <img 
+                  <Image 
                     src="/me3.png" 
                     alt="Gustavito Putra" 
-                    className="w-full h-full object-cover object-top"
+                    fill
+                    className="object-cover object-top"
+                    priority
                   />
                 </div>
 

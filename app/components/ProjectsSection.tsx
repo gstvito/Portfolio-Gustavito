@@ -1,12 +1,29 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import ProjectDetail from './ProjectDetail';
+
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  fullDescription: string;
+  image: string;
+  images: string[];
+  category: string;
+  tech: string[];
+  features: string[];
+  github: string;
+  demo: string;
+  status: string;
+  role: string;
+}
 
 export default function ProjectsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [activeFilter, setActiveFilter] = useState('all');
-  const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -138,10 +155,11 @@ export default function ProjectsSection() {
         {/* Project Image/Icon */}
         <div className="relative h-48 bg-gradient-to-br from-purple-600/20 to-pink-600/20 flex items-center justify-center overflow-hidden">
           {project.image.startsWith('/') ? (
-            <img 
+            <Image 
               src={project.image} 
               alt={project.title}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              fill
+              className="object-cover group-hover:scale-110 transition-transform duration-300"
             />
           ) : (
             <div className="text-6xl group-hover:scale-110 transition-transform duration-300">

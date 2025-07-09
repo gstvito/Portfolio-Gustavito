@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface ProjectDetailProps {
   project: {
@@ -55,10 +56,11 @@ export default function ProjectDetail({ project, onClose }: ProjectDetailProps) 
   const renderImage = (imageSrc: string, alt: string) => {
     if (imageSrc.startsWith('/')) {
       return (
-        <img 
+        <Image 
           src={imageSrc} 
           alt={alt}
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       );
     } else {

@@ -72,7 +72,7 @@ This message was sent from your portfolio contact form.
 
       // Reset status after 3 seconds
       setTimeout(() => setSubmitStatus("idle"), 3000);
-    } catch (error) {
+    } catch {
       setIsSubmitting(false);
       setSubmitStatus("error");
 
@@ -197,9 +197,9 @@ This message was sent from your portfolio contact form.
           }`}>
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-white mb-4">Let's talk about your project</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Let&apos;s talk about your project</h3>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  I'm always excited to take on new challenges and collaborate on interesting projects. 
+                  I&apos;m always excited to take on new challenges and collaborate on interesting projects. 
                   Whether you need a complete website, want to improve an existing application, or just 
                   have some questions about web development, feel free to contact me. 
                 </p>
@@ -207,7 +207,7 @@ This message was sent from your portfolio contact form.
 
               {/* Contact Information */}
               <div className="space-y-4">
-                {contactInfo.map((info, index) => (
+                {contactInfo.map((info) => (
                   <a
                     key={info.title}
                     href={info.link}
@@ -323,7 +323,7 @@ This message was sent from your portfolio contact form.
                     </svg>
                     <div>
                       <p className="text-blue-300 text-sm">
-                        <strong>Note:</strong> Clicking "Send Message" will open your default email client with a pre-filled email to gustavitoputra@gmail.com containing your message details.
+                        <strong>Note:</strong> Clicking &quot;Send Message&quot; will open your default email client with a pre-filled email to gustavitoputra@gmail.com containing your message details.
                       </p>
                     </div>
                   </div>

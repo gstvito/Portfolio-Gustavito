@@ -113,15 +113,15 @@ export default function AboutSection() {
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                Currently, I'm actively developing my front-end skills with a strong focus on deepening my expertise in Next.js. 
-                I'm passionate about mastering its advanced features like server-side rendering, static site generation, 
+                Currently, I&apos;m actively developing my front-end skills with a strong focus on deepening my expertise in Next.js. 
+                I&apos;m passionate about mastering its advanced features like server-side rendering, static site generation, 
                 and API routes to build more performant and scalable web applications. This continuous learning journey 
                 helps me leverage the full potential of the React ecosystem.
               </p>
 
               {/* Skills Highlight */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20">
-                <h4 className="text-xl font-semibold text-white mb-4">What I'm learning:</h4>
+                <h4 className="text-xl font-semibold text-white mb-4">What I&apos;m learning:</h4>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-3">
                     <span className="text-purple-400">✓</span>
@@ -165,7 +165,7 @@ export default function AboutSection() {
           }`}>
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-6 mb-8">
-              {stats.map((stat, index) => (
+              {stats.map((stat) => (
                 <div 
                   key={stat.label}
                   className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 text-center border border-purple-500/20 hover:border-purple-500/40 transition-all duration-200"
@@ -180,7 +180,7 @@ export default function AboutSection() {
 
             {/* Highlights */}
             <div className="space-y-4">
-              {highlights.map((highlight, index) => (
+              {highlights.map((highlight) => (
                 <div 
                   key={highlight.title}
                   className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 border border-purple-500/10 hover:border-purple-500/30 transition-all duration-200"
