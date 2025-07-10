@@ -81,7 +81,7 @@ export default function HeroSection() {
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start space-x-8 mt-12 mb-24 lg:mb-0">
               <a 
-                href="https://github.com/ReinDaze" 
+                href="https://github.com/gstvito" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white hover:scale-110 transition-all duration-200"

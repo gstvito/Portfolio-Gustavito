@@ -62,7 +62,7 @@ export default function Header({ onMobileMenuToggle }: HeaderProps) {
           {/* Resume Button Desktop */}
           <div className="hidden lg:block">
             <a
-              href="/resume.pdf"
+              href="/CV Gustavito Fajrul Izzati Deva Putra (2025).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full font-medium hover:scale-105 transition-transform duration-200"
@@ -74,7 +74,7 @@ export default function Header({ onMobileMenuToggle }: HeaderProps) {
           {/* Resume Button Tablet */}
           <div className="hidden md:block lg:hidden">
             <a
-              href="/resume.pdf"
+              href="/CV Gustavito Fajrul Izzati Deva Putra (2025).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full font-medium hover:scale-105 transition-transform duration-200 text-sm"

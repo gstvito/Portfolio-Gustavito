@@ -68,7 +68,7 @@ export default function ProjectsSection() {
       category: 'frontend',
       tech: ['Next.js', 'Tailwind CSS'],
       features: ['Landing Page', 'Property Listings', 'Responsive Layout', 'Company Profile', 'Contact Forms', 'Location Maps'],
-      github: 'https://github.com/ReinDaze/Resonance-Residence',
+      github: 'https://github.com/gstvito/Resonance-Residence',
       demo: 'https://resonancesamban.com',
       status: 'completed',
       role: 'Frontend Developer'
@@ -83,7 +83,7 @@ export default function ProjectsSection() {
       category: 'frontend',
       tech: ['Vue.js', 'Tailwind CSS', 'Laravel'],
       features: ['Flower Catalog', 'Contact Information', 'Gallery', 'Admin Dashboard'],
-      github: 'https://github.com/ReinDaze/LittleFairyFlorist',
+      github: 'https://github.com/gstvito/LittleFairyFlorist',
       demo: 'not deployed',
       status: 'completed',
       role: 'Frontend Developer'
@@ -98,7 +98,7 @@ export default function ProjectsSection() {
       category: 'fullstack',
       tech: ['Laravel', 'MySQL', 'Vue.js', 'Tailwind CSS'],
       features: ['User-friendly UI', 'Questionnaire', 'History Test', 'Admin Dashboard' ],
-      github: 'https://github.com/ReinDaze/StudySyncs',
+      github: 'https://github.com/gstvito/StudySyncs',
       demo: 'not deployed',
       status: 'completed',
       role: 'Full Stack Developer'
@@ -113,7 +113,7 @@ export default function ProjectsSection() {
       category: 'frontend',
       tech: ['HTML', 'Tailwind CSS', 'PHP'],
       features: ['Competitions Listing', 'Competitions Timeline', 'Responsive Design', 'News & Updates'],
-      github: 'https://github.com/ReinDaze/Vocation-of-The-Champions',
+      github: 'https://github.com/gstvito/Vocation-of-The-Champions',
       demo: 'https://vocationofthechampions.com/',
       status: 'completed',
       role: 'Frontend Developer'
@@ -128,7 +128,7 @@ export default function ProjectsSection() {
       category: 'frontend',
       tech: ['HTML', 'CSS', 'Javascript'],
       features: ['Landing Page', 'Organizational Structure Listing', 'Responsive Design', 'News Section', 'Contact Information'],
-      github: 'https://github.com/ReinDaze/BEM-SV-Website',
+      github: 'https://github.com/gstvito/BEM-SV-Website',
       demo: 'https://bemsvuns.com',
       status: 'completed',
       role: 'Frontend Developer'
@@ -315,7 +315,7 @@ export default function ProjectsSection() {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           <a
-            href="https://github.com"
+            href="https://github.com/gstvito"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-slate-800/50 border border-purple-500/30 text-purple-400 px-8 py-3 rounded-full font-semibold hover:bg-purple-500/10 hover:scale-105 transition-all duration-200"

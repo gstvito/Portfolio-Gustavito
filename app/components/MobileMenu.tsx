@@ -96,7 +96,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           {/* Resume Button for Mobile */}
           <div className="mt-8">
             <a
-              href="/resume.pdf"
+              href="/CV Gustavito Fajrul Izzati Deva Putra (2025).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center py-3 rounded-lg font-medium hover:scale-105 transition-transform duration-200"
@@ -127,7 +127,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               </svg>
             </a>
             <a
-              href="#https://github.com/ReinDaze"
+              href="#https://github.com/gstvito"
               className="text-gray-400 hover:text-purple-400 transition-colors"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

@@ -25,7 +25,7 @@ export default function Footer() {
       {
         title: 'Connect',
         links: [
-          { name: 'GitHub', href: 'https://github.com/ReinDaze' },
+          { name: 'GitHub', href: 'https://github.com/gstvito' },
           { name: 'LinkedIn', href: 'https://linkedin.com/gustavito-putra' },
           { name: 'Email', href: 'mailto:gustavitoputra@gmail.com' },
           { name: 'Instagram', href: 'https://instagram.com/gst.vito' },
@@ -58,7 +58,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com/ReinDaze" 
+                href="https://github.com/gstvito" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-500/20 hover:scale-110 transition-all duration-200"
