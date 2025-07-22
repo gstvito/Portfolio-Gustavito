@@ -73,55 +73,76 @@ export default function AboutSection() {
   ];
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      id="about" 
+      id="about"
       className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-slate-800"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
+        <div
+          className={`text-center mb-16 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Me</span>
+            About{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+              Me
+            </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
-          <div className={`transition-all duration-1000 delay-200 ${
-            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
-          }`}>
+          <div
+            className={`transition-all duration-1000 delay-200 ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-10"
+            }`}
+          >
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-white">
-                Front-End Developer
+                Full-Stack Developer
               </h3>
-              
+
               <p className="text-gray-300 text-lg leading-relaxed">
-                A passionate front-end developer with hands-on experience in React, Next.js, and Vue.js. 
-                I transform ideas into elegant, responsive web applications that deliver exceptional user experiences 
-                through clean code and modern design principles.
-              </p>
-              
-              <p className="text-gray-300 text-lg leading-relaxed">
-                My portfolio showcases diverse front-end projects from interactive e-commerce platforms 
-                to elegant real estate websites, built with modern Frontend frameworks. 
-                Each project demonstrates my expertise in creating intuitive user interfaces, seamless 
-                animations, and pixel-perfect responsive designs.
+                A passionate full-stack developer with hands-on experience in
+                React, Next.js, Vue.js, and modern backend technologies. I
+                transform ideas into complete, scalable web applications that
+                deliver exceptional user experiences through clean code, robust
+                architecture, and modern design principles.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                Currently, I&apos;m actively developing my front-end skills with a strong focus on deepening my expertise in Next.js. 
-                I&apos;m passionate about mastering its advanced features like server-side rendering, static site generation, 
-                and API routes to build more performant and scalable web applications. This continuous learning journey 
-                helps me leverage the full potential of the React ecosystem.
+                My portfolio features StudySync, a comprehensive learning
+                platform that helps users identify their optimal learning style
+                whether auditory, visual, or kinesthetic. This full-stack
+                project demonstrates my expertise across the entire development
+                stack - from creating an intuitive user interface with seamless
+                interactions on the frontend, to building secure APIs,
+                implementing assessment algorithms, and managing user data on
+                the backend.
+              </p>
+
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Currently, I am actively expanding my full-stack capabilities
+                with a strong focus on mastering Next.js advanced features like
+                server-side rendering and API routes, while also deepening my
+                backend expertise in Node.js, database management, and cloud
+                deployment. This continuous learning journey helps me bridge the
+                gap between frontend elegance and backend reliability, enabling
+                me to deliver complete digital solutions that meet both user
+                needs and business requirements.
               </p>
 
               {/* Skills Highlight */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20">
-                <h4 className="text-xl font-semibold text-white mb-4">What I&apos;m learning:</h4>
+                <h4 className="text-xl font-semibold text-white mb-4">
+                  What I&apos;m learning:
+                </h4>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-3">
                     <span className="text-purple-400">✓</span>
@@ -151,8 +172,18 @@ export default function AboutSection() {
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-transform duration-200"
                 >
                   Download CV
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
                   </svg>
                 </a>
               </div>
@@ -160,13 +191,17 @@ export default function AboutSection() {
           </div>
 
           {/* Right Column - Stats & Highlights */}
-          <div className={`transition-all duration-1000 delay-400 ${
-            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
-          }`}>
+          <div
+            className={`transition-all duration-1000 delay-400 ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-10"
+            }`}
+          >
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-6 mb-8">
               {stats.map((stat) => (
-                <div 
+                <div
                   key={stat.label}
                   className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 text-center border border-purple-500/20 hover:border-purple-500/40 transition-all duration-200"
                 >
@@ -181,15 +216,19 @@ export default function AboutSection() {
             {/* Highlights */}
             <div className="space-y-4">
               {highlights.map((highlight) => (
-                <div 
+                <div
                   key={highlight.title}
                   className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-4 border border-purple-500/10 hover:border-purple-500/30 transition-all duration-200"
                 >
                   <div className="flex items-center gap-4">
                     <div className="text-2xl">{highlight.icon}</div>
                     <div>
-                      <h5 className="text-white font-semibold mb-1">{highlight.title}</h5>
-                      <p className="text-gray-400 text-sm">{highlight.description}</p>
+                      <h5 className="text-white font-semibold mb-1">
+                        {highlight.title}
+                      </h5>
+                      <p className="text-gray-400 text-sm">
+                        {highlight.description}
+                      </p>
                     </div>
                   </div>
                 </div>

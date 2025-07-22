@@ -49,13 +49,13 @@ export default function HeroSection() {
             {/* Role */}
             <div className="mb-8">
               <span className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-bold">
-                Front End Developer
+                Full-Stack Developer
               </span>
             </div>
 
             {/* Description */}
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto lg:max-w-none lg:mx-0 leading-relaxed">
-              Passionate about building clean , modern, interactive, and responsive website. 
+              Passionate about full-stack development, creating modern web applications with responsive, interactive frontends and robust, scalable backend infrastructures.
             </p>
 
             {/* CTA Buttons */}
