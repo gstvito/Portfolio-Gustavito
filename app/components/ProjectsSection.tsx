@@ -69,7 +69,7 @@ export default function ProjectsSection() {
       tech: ['Next.js', 'Tailwind CSS'],
       features: ['Landing Page', 'Property Listings', 'Responsive Layout', 'Company Profile', 'Contact Forms', 'Location Maps'],
       github: 'https://github.com/gstvito/Resonance-Residence',
-      demo: 'https://resonancesamban.com',
+      demo: 'https://www.resonancesamban.com/',
       status: 'completed',
       role: 'Frontend Developer'
     },
