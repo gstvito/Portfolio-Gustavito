@@ -2,12 +2,26 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
+  const [currentRole, setCurrentRole] = useState(0);
+  
+  const roles = [
+    'Fullstack Developer Enthusiast',
+    'Junior Frontend Developer',
+  ];
 
   useEffect(() => {
     setIsVisible(true);
+    
+    // Role switching animation
+    const interval = setInterval(() => {
+      setCurrentRole((prev) => (prev + 1) % roles.length);
+    }, 5000); // Change every 3 seconds
+
+    return () => clearInterval(interval);
   }, []);
 
   const scrollToProjects = () => {
@@ -47,15 +61,33 @@ export default function HeroSection() {
             </h1>
 
             {/* Role */}
-            <div className="mb-8">
-              <span className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-bold">
-                Full-Stack Developer
-              </span>
+            <div className="mb-8 h-12 md:h-16 flex items-center justify-center lg:justify-start">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={currentRole}
+                  className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-bold"
+                  initial={{ 
+                    opacity: 0
+                  }}
+                  animate={{ 
+                    opacity: 1
+                  }}
+                  exit={{ 
+                    opacity: 0
+                  }}
+                  transition={{ 
+                    duration: 0.5,
+                    ease: "easeInOut"
+                  }}
+                >
+                  {roles[currentRole]}
+                </motion.span>
+              </AnimatePresence>
             </div>
 
             {/* Description */}
             <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto lg:max-w-none lg:mx-0 leading-relaxed">
-              Passionate about full-stack development, creating modern web applications with responsive, interactive frontends and robust, scalable backend infrastructures.
+              Passionate about frontend development, creating modern web applications with responsive, interactive user interfaces and exploring fullstack technologies.
             </p>
 
             {/* CTA Buttons */}

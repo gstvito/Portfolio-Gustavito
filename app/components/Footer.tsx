@@ -54,7 +54,7 @@ export default function Footer() {
               </p>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Passionate about full-stack development, creating modern web applications with responsive, interactive frontends and robust, scalable backend infrastructures
+              Passionate about frontend development, creating modern web applications with responsive, interactive user interfaces and exploring fullstack technologies.
             </p>
             <div className="flex space-x-4">
               <a 
