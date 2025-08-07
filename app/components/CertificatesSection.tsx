@@ -41,93 +41,93 @@ export default function CertificatesSection() {
   const certificates: Certificate[] = [
     {
       id: 1,
-      title: "Front-End Web Development",
-      issuer: "Coursera",
-      date: "2024",
-      image: "/certificates/frontend-cert.png",
-      description: "Comprehensive course covering HTML, CSS, JavaScript, and React fundamentals.",
-      credentialUrl: "https://coursera.org/verify/certificate-id",
-      skills: ["HTML", "CSS", "JavaScript", "React"]
+      title: "Rest API (Intermediate) Certificate",
+      issuer: "Hackerrank",
+      date: "2025",
+      image: "/restapi_hackerrank.png",
+      description: "Intermediate-level certification demonstrating proficiency in designing and implementing RESTful APIs, including HTTP methods, status codes, and API best practices.",
+      credentialUrl: "https://www.hackerrank.com/certificates/iframe/21d3285f3bb3",
+      skills: ["REST API", "JavaScript"]
     },
     {
       id: 2,
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "FreeCodeCamp",
-      date: "2024",
-      image: "/certificates/js-cert.png",
-      description: "Advanced JavaScript programming concepts and algorithm problem solving.",
+      title: "Javascript (Intermediate) Certificate",
+      issuer: "Hackerrank",
+      date: "2025",
+      image: "/javascript_hackerrank.png",
+      description: "Intermediate JavaScript certification covering advanced programming concepts, ES6+ features, asynchronous programming, and algorithm problem solving.",
       credentialUrl: "https://freecodecamp.org/certification/username/javascript",
       skills: ["JavaScript", "Algorithms", "Data Structures"]
     },
     {
       id: 3,
-      title: "Responsive Web Design",
-      issuer: "FreeCodeCamp",
-      date: "2023",
-      image: "/certificates/responsive-cert.png",
-      description: "Building responsive and accessible web interfaces using modern CSS techniques.",
-      credentialUrl: "https://freecodecamp.org/certification/username/responsive-web-design",
-      skills: ["CSS", "Responsive Design", "Accessibility"]
+      title: "Belajar Membuat Front-End Web Pemula",
+      issuer: "Dicoding Indonesia",
+      date: "2025",
+      image: "/frontend_dicoding.png",
+      description: "Comprehensive beginner course on front-end web development covering HTML structure, CSS styling, JavaScript fundamentals, DOM manipulation, and Browser Object Model (BOM).",
+      credentialUrl: "https://drive.google.com/file/d/1z_4YoiIEQHiDv2eIUF_NemPEc4RG4sEe/view",
+      skills: ["HTML", "CSS", "Javascript", "BOM", "DOM"]
     },
     {
       id: 4,
-      title: "React Development",
-      issuer: "Meta",
-      date: "2024",
-      image: "/certificates/react-cert.png",
-      description: "Advanced React concepts including hooks, context, and state management.",
-      credentialUrl: "https://coursera.org/verify/react-certificate",
-      skills: ["React", "Hooks", "State Management", "Context API"]
+      title: "Belajar Dasar Pemrograman Javascript",
+      issuer: "Dicoding Indonesia",
+      date: "2025",
+      image: "/javascript_dicoding.png",
+      description: "Fundamental JavaScript programming course covering syntax, data types, functions, control structures, object-oriented programming, and modern JavaScript features.",
+      credentialUrl: "https://drive.google.com/file/d/1xMZopogBG9cGuI6edv7zHwNdtXSW99Hw/view",
+      skills: ["Javascript"]
     },
     {
       id: 5,
-      title: "Node.js Backend Development",
-      issuer: "IBM",
-      date: "2023",
-      image: "/certificates/nodejs-cert.png",
-      description: "Server-side development with Node.js, Express, and database integration.",
-      credentialUrl: "https://coursera.org/verify/nodejs-certificate",
-      skills: ["Node.js", "Express", "MongoDB", "REST API"]
+      title: "Front-End Intermediate",
+      issuer: "PT Sistem Solutionlabs Indonesia",
+      date: "2024",
+      image: "/frontend_sistem.png",
+      description: "Intermediate front-end development certification focusing on Vue.js framework, component-based architecture, state management, and modern JavaScript development practices.",
+      credentialUrl: "https://drive.google.com/file/d/1ehv0pUPg1iZv-IklMDL473EyFl0beq-H/view",
+      skills: ["Vue.js"]
     },
     {
       id: 6,
-      title: "Database Design and Management",
-      issuer: "Stanford Online",
-      date: "2023",
-      image: "/certificates/database-cert.png",
-      description: "Comprehensive database design, SQL, and database management systems.",
-      credentialUrl: "https://online.stanford.edu/verify/database",
-      skills: ["SQL", "Database Design", "MySQL", "PostgreSQL"]
+      title: "JavaFundamentals",
+      issuer: "Oracle",
+      date: "2024",
+      image: "/java_oracle.png",
+      description: "Oracle-certified Java fundamentals course covering object-oriented programming principles, Java syntax, data structures, exception handling, and core Java libraries.",
+      credentialUrl: "https://drive.google.com/file/d/1Y68beIjtXQ-Fs_Wchx-miXmFTB75e1CB/view",
+      skills: ["Java"]
     },
     {
       id: 7,
-      title: "UI/UX Design Fundamentals",
-      issuer: "Google",
-      date: "2023",
-      image: "/certificates/ux-cert.png",
-      description: "User experience design principles, prototyping, and user research methods.",
-      credentialUrl: "https://coursera.org/verify/google-ux",
-      skills: ["UI Design", "UX Research", "Figma", "Prototyping"]
+      title: "Belajar Dasar Pemrograman Web",
+      issuer: "Dicoding Indonesia",
+      date: "2024",
+      image: "/webdev_dicodin.png",
+      description: "Basic web programming course introducing HTML markup language for content structure and CSS for styling and layout design in web development.",
+      credentialUrl: "https://drive.google.com/file/d/15BvtPJvf8NUGzij-rsJZ6XvO6rhSZvus/view",
+      skills: ["HTML", "CSS"]
     },
     {
       id: 8,
-      title: "Cloud Computing with AWS",
-      issuer: "Amazon Web Services",
+      title: "CCNav7: Introduction to Networks",
+      issuer: "Cisco",
       date: "2024",
-      image: "/certificates/aws-cert.png",
-      description: "Cloud infrastructure, deployment, and AWS services fundamentals.",
-      credentialUrl: "https://aws.amazon.com/verification/cloud-practitioner",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3"]
+      image: "/ccna_cisco.png",
+      description: "Cisco CCNA certification covering network fundamentals, network protocols, IP addressing, routing and switching concepts, and network security basics.",
+      credentialUrl: "https://drive.google.com/file/d/1z0YR2l3OvsBcbT5fO3jxTxB-93EAfvp8/view",
+      skills: ["Networking", "CCNA", "Cisco"]
     },
     {
       id: 9,
-      title: "Mobile App Development",
-      issuer: "Flutter",
+      title: "Front-End Developer",
+      issuer: "Dibimbing.id",
       date: "2024",
-      image: "/certificates/flutter-cert.png",
-      description: "Cross-platform mobile development using Flutter and Dart.",
-      credentialUrl: "https://flutter.dev/certification/mobile-dev",
-      skills: ["Flutter", "Dart", "Mobile Development", "Cross-platform"]
+      image: "/frontend_dibimbing.png",
+      description: "Comprehensive front-end developer bootcamp covering HTML semantics, CSS frameworks, JavaScript programming, responsive design, and modern web development workflows.",
+      credentialUrl: "https://drive.google.com/file/d/19WPYEH3rktnywALMX5k_CZJSE6j71XAX/view",
+      skills: ["HTML", "CSS", "Javascript"]
     }
   ];
 
@@ -149,9 +149,22 @@ export default function CertificatesSection() {
         
         {/* Certificate Image */}
         <div className="relative h-48 bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-xl mb-4 overflow-hidden">
-          <div className="w-full h-full flex items-center justify-center bg-white/10 backdrop-blur-sm">
-            <div className="text-6xl">🏆</div>
-          </div>
+          <Image
+            src={certificate.image}
+            alt={certificate.title}
+            width={400}
+            height={300}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              // Fallback to trophy emoji if image fails to load
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const parent = target.parentElement;
+              if (parent) {
+                parent.innerHTML = '<div class="w-full h-full flex items-center justify-center bg-white/10 backdrop-blur-sm"><div class="text-6xl">🏆</div></div>';
+              }
+            }}
+          />
         </div>
 
         {/* Certificate Info */}
@@ -242,36 +255,10 @@ export default function CertificatesSection() {
               onClick={handleLoadMore}
               className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-purple-500/25"
             >
-              Load More Certificates ({certificates.length - visibleCount} remaining)
+              Load More Certificates
             </button>
           </div>
         )}
-
-        {/* Stats */}
-        <div className={`mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-1000 delay-600 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          <div className="text-center p-6 bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-purple-500/20">
-            <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-2">
-              {certificates.length}+
-            </div>
-            <div className="text-gray-300">Certificates Earned</div>
-          </div>
-          
-          <div className="text-center p-6 bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-purple-500/20">
-            <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-2">
-              100+
-            </div>
-            <div className="text-gray-300">Hours of Learning</div>
-          </div>
-          
-          <div className="text-center p-6 bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-purple-500/20">
-            <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-2">
-              8+
-            </div>
-            <div className="text-gray-300">Platforms Used</div>
-          </div>
-        </div>
       </div>
 
       {/* Certificate Detail Modal */}
