@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface HeaderProps {
   onMobileMenuToggle: () => void;
@@ -38,8 +39,19 @@ export default function Header({ onMobileMenuToggle }: HeaderProps) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-white">
-              Portfolio<span className="text-purple-400">.</span>
+            <a href="#home" className="flex items-center text-2xl font-bold text-white group">
+              <div className="w-full h-full rounded-full flex items-center justify-center transition-transform group-hover:scale-110">
+                <Image
+                  src="/logo.png"
+                  alt="Gustavito Logo"
+                  width={64}
+                  height={64}
+                  className="object-contain"
+                />
+              </div>
+              <span className="hidden sm:inline">
+                Portfolio<span className="text-purple-400">.</span>
+              </span>
             </a>
           </div>
 
