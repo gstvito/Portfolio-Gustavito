@@ -47,14 +47,14 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <h3 className="text-2xl font-bold text-white">
-                Gustavito&apos;s Portfolio<span className="text-purple-400">.</span>
+                Portfolio<span className="text-purple-400">.</span>
               </h3>
               <p className="text-gray-300 mt-2">
-                Front-End Developer
+                Fullstack Developer
               </p>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Passionate about building clean , modern, interactive, and responsive website. 
+              Passionate about full-stack development, creating modern web applications with responsive, interactive frontends and robust, scalable backend infrastructures
             </p>
             <div className="flex space-x-4">
               <a 

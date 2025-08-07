@@ -24,6 +24,7 @@ export default function Header({ onMobileMenuToggle }: HeaderProps) {
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
+    { href: '#certificates', label: 'Certificates' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -50,7 +51,7 @@ export default function Header({ onMobileMenuToggle }: HeaderProps) {
                 />
               </div>
               <span className="hidden sm:inline">
-                Portfolio<span className="text-purple-400">.</span>
+                Portfolio<span className="text-purple-400 ">.</span>
               </span>
             </a>
           </div>

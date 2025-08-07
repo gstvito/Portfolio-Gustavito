@@ -147,7 +147,7 @@ export default function HeroSection() {
                 <span className="text-pink-400 text-sm font-medium">Next.js</span>
               </div>
               <div className="absolute -left-6 bottom-20 bg-slate-800/80 backdrop-blur-sm border border-purple-500/30 rounded-lg px-3 py-2 animate-float" style={{ animationDelay: '2s' }}>
-                <span className="text-indigo-400 text-sm font-medium">Vue.js</span>
+                <span className="text-indigo-400 text-sm font-medium">Laravel</span>
               </div>
             </div>
           </div>

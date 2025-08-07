@@ -129,7 +129,7 @@ export default function ProjectsSection() {
       tech: ['HTML', 'CSS', 'Javascript'],
       features: ['Landing Page', 'Organizational Structure Listing', 'Responsive Design', 'News Section', 'Contact Information'],
       github: 'https://github.com/gstvito/BEM-SV-Website',
-      demo: 'https://bemsvuns.com',
+      demo: 'https://bem.vokasi.uns.ac.id/',
       status: 'completed',
       role: 'Frontend Developer'
     },

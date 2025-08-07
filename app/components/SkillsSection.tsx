@@ -246,9 +246,14 @@ export default function SkillsSection() {
     <section 
       ref={sectionRef}
       id="skills" 
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900"
+      className="py-20 bg-slate-900 relative overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-pink-900/20"></div>
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
