@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -53,9 +54,20 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-purple-500/20">
-          <span className="text-xl font-bold text-white">
-            Gustavito<span className="text-purple-400">.</span>
-          </span>
+          <div className="flex items-center">
+            <div className="w-full h-full rounded-full flex items-center justify-center p-1">
+              <Image
+                src="/logo.png"
+                alt="Gustavito Logo"
+                width={54}
+                height={54}
+                className="object-contain"
+              />
+            </div>
+            <span className="text-xl font-bold text-white">
+              Portfolio<span className="text-purple-400">.</span>
+            </span>
+          </div>
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-white p-2 transition-colors"
