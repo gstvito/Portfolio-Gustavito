@@ -41,7 +41,7 @@ export default function AboutSection() {
         </svg>
       ),
       title: 'React Ecosystem',
-      description: 'Expert in React, Next.js with modern JavaScript/TypeScript development.'
+      description: 'Proficient in React, Next.js with modern JavaScript/TypeScript development.'
     },
     {
       icon: (
@@ -58,8 +58,8 @@ export default function AboutSection() {
           <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
         </svg>
       ),
-      title: 'Full-Stack Ready',
-      description: 'Backend experience with Laravel, Node.js, and MySQL databases.'
+      title: 'Fullstack Explorer',
+      description: 'Exploring backend technologies including Laravel, Node.js, and databases.'
     },
     {
       icon: (
@@ -104,61 +104,57 @@ export default function AboutSection() {
             }`}
           >
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white">
-                Full-Stack Developer
-              </h3>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                A passionate full-stack developer with hands-on experience in
-                React, Next.js, Vue.js, and modern backend technologies. I
-                transform ideas into complete, scalable web applications that
-                deliver exceptional user experiences through clean code, robust
-                architecture, and modern design principles.
+                A passionate junior frontend developer with hands-on experience in
+                React, Next.js, and modern JavaScript technologies. I focus on
+                creating engaging, responsive user interfaces while exploring
+                fullstack development to build complete web applications that
+                deliver exceptional user experiences through clean code and
+                modern design principles.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
                 My portfolio features StudySync, a comprehensive learning
                 platform that helps users identify their optimal learning style
-                whether auditory, visual, or kinesthetic. This full-stack
-                project demonstrates my expertise across the entire development
-                stack - from creating an intuitive user interface with seamless
-                interactions on the frontend, to building secure APIs,
-                implementing assessment algorithms, and managing user data on
-                the backend.
+                whether auditory, visual, or kinesthetic. This project
+                demonstrates my frontend expertise in creating intuitive user
+                interfaces with seamless interactions, while also showcasing my
+                growing fullstack capabilities through API integration and
+                dynamic content management.
               </p>
 
               <p className="text-gray-300 text-lg leading-relaxed">
-                Currently, I am actively expanding my full-stack capabilities
-                with a strong focus on mastering Next.js advanced features like
-                server-side rendering and API routes, while also deepening my
-                backend expertise in Node.js, database management, and cloud
-                deployment. This continuous learning journey helps me bridge the
-                gap between frontend elegance and backend reliability, enabling
-                me to deliver complete digital solutions that meet both user
-                needs and business requirements.
+                Currently, I am actively expanding my frontend expertise with
+                advanced React patterns and Next.js features, while
+                enthusiastically exploring fullstack technologies including
+                Node.js, database management, and backend development. This
+                continuous learning journey helps me bridge the gap between
+                frontend innovation and backend functionality, enabling me to
+                contribute to complete digital solutions.
               </p>
 
               {/* Skills Highlight */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20">
                 <h4 className="text-xl font-semibold text-white mb-4">
-                  What I&apos;m learning:
+                  What I&apos;m focusing on:
                 </h4>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center gap-3">
                     <span className="text-purple-400">✓</span>
-                    Modern JavaScript frameworks
+                    Advanced React patterns & hooks
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="text-purple-400">✓</span>
-                    Responsive web design
+                    Modern CSS & responsive design
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="text-purple-400">✓</span>
-                    Backend development basics
+                    Fullstack development exploration
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="text-purple-400">✓</span>
-                    Clean code practices
+                    Frontend performance optimization
                   </li>
                 </ul>
               </div>

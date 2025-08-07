@@ -50,7 +50,7 @@ export default function Footer() {
                 Portfolio<span className="text-purple-400">.</span>
               </h3>
               <p className="text-gray-300 mt-2">
-                Fullstack Developer
+                Fullstack Developer Enthusiast
               </p>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">

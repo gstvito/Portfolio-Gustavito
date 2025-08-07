@@ -7,22 +7,49 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [currentRole, setCurrentRole] = useState(0);
+  const [displayedText, setDisplayedText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
   
   const roles = [
-    'Fullstack Developer Enthusiast',
     'Junior Frontend Developer',
+    'Fullstack Developer Enthusiast',
   ];
 
   useEffect(() => {
     setIsVisible(true);
-    
-    // Role switching animation
-    const interval = setInterval(() => {
-      setCurrentRole((prev) => (prev + 1) % roles.length);
-    }, 5000); // Change every 3 seconds
-
-    return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+    const currentText = roles[currentRole];
+    
+    if (isTyping) {
+      // Typing effect
+      if (displayedText.length < currentText.length) {
+        timeout = setTimeout(() => {
+          setDisplayedText(currentText.slice(0, displayedText.length + 1));
+        }, 100); // Typing speed
+      } else {
+        // Finished typing, wait then start deleting
+        timeout = setTimeout(() => {
+          setIsTyping(false);
+        }, 2000); // Wait time before deleting
+      }
+    } else {
+      // Deleting effect
+      if (displayedText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayedText(displayedText.slice(0, -1));
+        }, 50); // Deleting speed (faster)
+      } else {
+        // Finished deleting, move to next role
+        setCurrentRole((prev) => (prev + 1) % roles.length);
+        setIsTyping(true);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayedText, currentRole, isTyping, roles]);
 
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -62,27 +89,10 @@ export default function HeroSection() {
 
             {/* Role */}
             <div className="mb-8 h-12 md:h-16 flex items-center justify-center lg:justify-start">
-              <AnimatePresence mode="wait">
-                <motion.span
-                  key={currentRole}
-                  className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-bold"
-                  initial={{ 
-                    opacity: 0
-                  }}
-                  animate={{ 
-                    opacity: 1
-                  }}
-                  exit={{ 
-                    opacity: 0
-                  }}
-                  transition={{ 
-                    duration: 0.5,
-                    ease: "easeInOut"
-                  }}
-                >
-                  {roles[currentRole]}
-                </motion.span>
-              </AnimatePresence>
+              <span className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-bold">
+                {displayedText}
+                <span className="animate-pulse">|</span>
+              </span>
             </div>
 
             {/* Description */}
